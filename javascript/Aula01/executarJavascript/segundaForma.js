@@ -1,0 +1,1 @@
+console.log("Segunda forma de executar o JavaScript");
