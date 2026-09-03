@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Completo</title>
+</head>
+<body>
+    <form action="https://6a99f38e9a7ec1b817d1fd9b.mockapi.io/pessoa" method="post">
+        <fieldset>
+            <legend>Cadastro de Pessoa</legend>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required>
+            </p>
+            <p>
+                <label for="altura">Altura:</label>
+                <input type="number" name="altura" id="altura" min="0" max="3" step="0.1">
+            </p>
+            <p>
+                <label for="corDosOlhos">Cor dos Olhos:</label>
+                <input type="color" name="corDosOlhos" id="corDosOlhos">
+            </p>
+            <p>
+                <label for="dataDeNascimento">Data de Nascimento:</label>
+                <input type="date" name="dataDeNascimento" id="dataDeNascimento">
+            </p>
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha">
+            </p>
+            <p>
+                <label for="genero">Gênero:</label>
+                <input type="radio" name="genero" id="masculino" value="m">
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="genero" id="feminino" value="f">
+                <label for="feminino">Feminino</label>
+            </p>
+            <p>
+                <button type="submit">Enviar</button>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
