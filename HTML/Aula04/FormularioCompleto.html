@@ -41,7 +41,37 @@
                 <label for="feminino">Feminino</label>
             </p>
             <p>
+                <label for="gostaDe">Gosta de:</label>
+                <input type="checkbox" name="ler" id="ler" value="ler">
+                <label for="ler">Ler</label>
+                <input type="checkbox" name="esportes" id="esporte" value="esporte">
+                <label for="esportes">Esportes</label>
+                <input type="checkbox" name="musica" id="musica" value="musica">
+                <label for="musica">Música</label>
+            </p>
+            <p>
+                <label for="uploadRG">Upload do RG:</label>
+                <input type="file" name="uploadRG" id="uploadRG">
+            </p>
+            <p>
+                <label for="estado">Estado:</label>
+                <select name="estado" id="estado">
+                    <option value="">Selecione um estado</option>
+                    <optgroup label="Região Sudeste">
+                        <option value="sp">São Paulo</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="mg">Minas Gerais</option>
+                    </optgroup>
+                    <optgroup label="Região Sul">
+                        <option value="rs">Rio Grande do Sul</option>
+                        <option value="sc">Santa Catarina</option>
+                        <option value="pr">Paraná</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
                 <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
             </p>
         </fieldset>
     </form>
