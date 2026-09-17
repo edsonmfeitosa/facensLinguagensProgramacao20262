@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Position</title>
+    <style>
+        .static{
+            background-color: aquamarine;
+            height: 80px;
+            border: 1px black solid
+        }
+        .relative {
+            background-color: brown;
+            height: 80px;
+            border: 1px black solid;
+            position: relative;
+            top: 30px;
+            left: 30px;
+        }
+        .absolute {
+            position: absolute;
+            background-color: yellow;
+            height: 50px;
+            width: 80px;
+            border: 1px black solid;
+            top: 10px;
+            right: 100px;
+        }
+        .fixed {
+            background-color: green;
+            height: 50px;
+            width: 50px;
+            border: 1px black solid;
+            position: fixed;
+            top: 20px;
+            left: 100px;
+        }
+        .sticky {
+            background-color: chocolate;
+            height: 50px;
+            width: 50px;
+            border: 1px black solid;
+            position: sticky;
+            top: 20px;
+            left: 200px;
+        }
+        html {
+            padding-bottom: 1100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="absolute">absolute</div>
+    <div class="static">Static</div>
+    <div class="sticky">sticky</div>
+    <div class="relative">
+        <div class="absolute">absolute</div>
+        relative</div>
+    <div class="static">Static</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel esse corporis dolores beatae sint quo, aliquid magnam nulla distinctio illo quaerat? Ut eveniet aperiam modi. Fugit modi illum doloribus. Fugiat!</p>
+    <div class="fixed">fixed</div>
+    <div class="static">Static</div>
+    <div class="relative">relative</div>
+    
+</body>
+</html>
