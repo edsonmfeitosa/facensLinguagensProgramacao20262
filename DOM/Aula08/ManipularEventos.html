@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Manipular eventos</title>
+</head>
+<body onload="carregar()">
+    <h1 onmouseenter="passouMouse()">DOM - Manipular eventos</h1>
+    <p>
+        <label for="palavra">Digite a palavra</label>
+        <input type="text" name="palavra" id="palavra">
+        <button onclick="contar(event)">Contar</button>
+    </p>
+    <p id="quantidade">
+        Quantidade de letras: 
+    </p>
+</body>
+<script>
+    //maneira imperativa
+    function carregar(){
+        alert('A tela foi carregada')
+    }
+    function passouMouse(){
+        alert('Tira o mouse daí!!!!')
+    }
+    function contar(event){
+        event.preventDefault();
+        let caixaTexto = document.querySelector('#palavra')
+        let palavra = caixaTexto.value
+        let resultado = document.querySelector('#quantidade')
+        resultado.textContent = 'Quantidade de letras: '+ palavra.length
+        caixaTexto.value = ""
+    }
+    //Declarativa - Escutador de eventos
+    let caixaTexto = document.querySelector('#palavra')
+    caixaTexto.addEventListener("focusin", function () {
+        console.log("entrou em foco!")
+    })
+    caixaTexto.addEventListener("focusout", () => {
+        console.log("saiu de foco!")
+    })
+</script>
+</html>

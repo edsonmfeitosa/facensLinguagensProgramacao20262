@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Manipular propriedades</title>
+</head>
+<style>
+    .exemplo {
+        background-color: aquamarine;
+        font-size: 50px;
+    }
+</style>
+<body>
+    <h1>DOM - Manipular propriedades</h1>
+    <p>
+        <a href="https://www.google.com/">Google</a>
+    </p>
+    <p>
+        <img src="" alt="teste">
+    </p>
+</body>
+<script>
+    //Manipular as propriedades das tags HTML
+    let link = document.querySelector('a')
+    link.textContent = 'UniFacens'
+    link.href = 'https://facens.br/'
+
+    let imagem = document.querySelector('img')
+    imagem.src = 'https://facens.br/wp-content/uploads/2026/01/logo_unifacens_2026_norender-1.png'
+    imagem.setAttribute('alt', 'Unifacens')
+
+    //manupular CSS
+    let titulo = document.querySelector('h1')
+    titulo.style.color = 'red'
+    titulo.style.backgroundColor = 'black'
+    titulo.className = 'exemplo'
+
+    link.classList = "exemplo"
+    link.removeAttribute('class')
+</script>
+</html>

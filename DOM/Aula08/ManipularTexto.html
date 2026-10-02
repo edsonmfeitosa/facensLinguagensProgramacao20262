@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Manipular texto</title>
+</head>
+<body>
+    <h1>Manipular texto</h1>
+    <p id="par1">Primeiro parágrafo</p>
+    <p class="par2">Segundo parágrafo</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+</body>
+<script>
+    let titulo = document.querySelector('h1')
+    titulo.textContent = "Novo título para a página"
+    let paragrafo1 = document.querySelector('#par1')
+    paragrafo1.textContent = "Alterei o primeiro parágrafo"
+    document.querySelector(".par2").textContent = "Olá pessoal!"
+    let lista = document.querySelectorAll('li')
+    console.log(lista)
+    lista[1].innerText = "Edson"
+</script>
+</html>
