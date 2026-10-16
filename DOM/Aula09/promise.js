@@ -6,7 +6,7 @@ function pesquisar(event) {
     cep = cep.replace('-', '').replace('.', '');
     let carregar = document.querySelector('.carregar');
     carregar.style.visibility = 'visible';
-    let endereco = consultaCEP(cep).then(endereco => {
+    consultaCEP(cep).then(endereco => {
         document.querySelector('#endereco').value = endereco.logradouro;
         document.querySelector('#bairro').value = endereco.bairro;
         document.querySelector('#estado').value = endereco.estado;
